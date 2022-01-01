@@ -31,12 +31,6 @@ struct MoonView: View {
             .foregroundColor(.white)
             .padding(.horizontal, 24)
             .padding(.bottom, 150)
-            
-            ZStack {
-                SideMenu(selected: $selection, options: ["HOME", "MOON", "MARS"])
-                    .padding(.top, 700)
-            }.padding(.leading, 25.0).frame(width: 250, height: 100, alignment: .center)
-                
         }
     }
     

@@ -19,7 +19,7 @@ struct MarsView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack(alignment: .leading) {
                 Spacer()
-                //rating
+                marsRating
                 Text("Mars")
                     .font(.largeTitle)
                     .fontWeight(.light)
@@ -27,19 +27,11 @@ struct MarsView: View {
                 Text("Nuke Mars - Elon Musk\n\nTravel to the red planet, Mars. Remember to bring your rover. We hope you don't mind a little sand in your boots!")
                     .fontWeight(.light)
                 Divider().background(Color.white).padding(.trailing, 128)
-                //details
+                marsDetails
             }
             .foregroundColor(.white)
             .padding(.horizontal, 24)
             .padding(.bottom, 150)
-            
-            
-            ZStack {
-                SideMenu(selected: $selection, options: ["HOME", "MOON", "MARS"])
-                    .padding(.top, 700)
-            }
-            .padding(.leading, 25.0).frame(width: 250, height: 100, alignment: .center)
-                
         }
     }
     
@@ -50,7 +42,7 @@ struct MarsView: View {
                     .stroke(Color.white, lineWidth: 0.5)
                     .frame(width: 60, height: 28)
             )
-            .padding(.bottom, 16)
+            .padding(.bottom, -1)
     }
 
     var details: some View {
