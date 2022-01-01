@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MarsView.swift
 //  Space Travel
 //
 //  Created by Conner Luzier on 12/31/21.
@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MarsView: View {
     @State var selection: Int = 0
+    
     var body: some View {
         ZStack {
-            Image("space-background")
+            Image("mars-background")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(minWidth: 0, maxWidth: .infinity)
@@ -19,11 +20,11 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 Spacer()
                 //rating
-                Text("Space Travel")
+                Text("Mars")
                     .font(.largeTitle)
                     .fontWeight(.light)
                 Divider().background(Color.white).padding(.trailing, 128)
-                Text("Finally, it's here: Travelling to space. With just a few simple clicks, you can book your ticket on the next shuttle to the moon!\n\nFor real adventurous travellers, we also offer trips to Mars. In our shuttle X1, you will be there in no time with the newest and most comfortable travelling options.")
+                Text("Nuke Mars - Elon Musk\n\nTravel to the red planet, Mars. Remember to bring your rover. We hope you don't mind a little sand in your boots!")
                     .fontWeight(.light)
                 Divider().background(Color.white).padding(.trailing, 128)
                 //details
@@ -32,10 +33,12 @@ struct ContentView: View {
             .padding(.horizontal, 24)
             .padding(.bottom, 150)
             
+            
             ZStack {
                 SideMenu(selected: $selection, options: ["HOME", "MOON", "MARS"])
                     .padding(.top, 700)
-            }.padding(.leading, 25.0).frame(width: 250, height: 100, alignment: .center)
+            }
+            .padding(.leading, 25.0).frame(width: 250, height: 100, alignment: .center)
                 
         }
     }
@@ -60,8 +63,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MarsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MarsView()
     }
 }
+

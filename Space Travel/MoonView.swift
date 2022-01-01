@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MoonView.swift
 //  Space Travel
 //
 //  Created by Conner Luzier on 12/31/21.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MoonView: View {
     @State var selection: Int = 0
     var body: some View {
         ZStack {
-            Image("space-background")
+            Image("moon-background")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(minWidth: 0, maxWidth: .infinity)
@@ -19,11 +19,11 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 Spacer()
                 //rating
-                Text("Space Travel")
+                Text("Moon")
                     .font(.largeTitle)
                     .fontWeight(.light)
                 Divider().background(Color.white).padding(.trailing, 128)
-                Text("Finally, it's here: Travelling to space. With just a few simple clicks, you can book your ticket on the next shuttle to the moon!\n\nFor real adventurous travellers, we also offer trips to Mars. In our shuttle X1, you will be there in no time with the newest and most comfortable travelling options.")
+                Text("One small step for man, one giant leap for man kind. - Neil Armstrong\n\nGet your bags ready, we're going to collect some moon rocks!")
                     .fontWeight(.light)
                 Divider().background(Color.white).padding(.trailing, 128)
                 //details
@@ -60,8 +60,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MoonView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MoonView()
     }
 }
+
