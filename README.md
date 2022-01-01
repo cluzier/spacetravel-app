@@ -4,9 +4,6 @@
 This is an app I made in a weekend to learn more 
 about SwiftUI and it's features.
 ## Roadmap
-
-- Add more integrations
-- Working Moon and Mars pages
 - Page transition animations
 
 
