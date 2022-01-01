@@ -11,7 +11,7 @@ import SwiftUI
 struct Space_TravelApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().edgesIgnoringSafeArea(.all)
         }
     }
 }

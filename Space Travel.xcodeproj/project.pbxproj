@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F16CD646277FF041003BE269 /* MoonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16CD645277FF041003BE269 /* MoonView.swift */; };
-		F16CD648277FF0B6003BE269 /* MarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16CD647277FF0B6003BE269 /* MarsView.swift */; };
 		F1FF6CEA277F9F6D00A46ECE /* Space_TravelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF6CE9277F9F6D00A46ECE /* Space_TravelApp.swift */; };
 		F1FF6CEC277F9F6D00A46ECE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF6CEB277F9F6D00A46ECE /* ContentView.swift */; };
 		F1FF6CEE277F9F6E00A46ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FF6CED277F9F6E00A46ECE /* Assets.xcassets */; };
@@ -37,8 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F16CD645277FF041003BE269 /* MoonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonView.swift; sourceTree = "<group>"; };
-		F16CD647277FF0B6003BE269 /* MarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsView.swift; sourceTree = "<group>"; };
 		F1FF6CE6277F9F6D00A46ECE /* Space Travel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Travel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1FF6CE9277F9F6D00A46ECE /* Space_TravelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_TravelApp.swift; sourceTree = "<group>"; };
 		F1FF6CEB277F9F6D00A46ECE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,8 +101,6 @@
 				F1FF6D13277FC80F00A46ECE /* SideMenu.swift */,
 				F1FF6CED277F9F6E00A46ECE /* Assets.xcassets */,
 				F1FF6CEF277F9F6E00A46ECE /* Preview Content */,
-				F16CD645277FF041003BE269 /* MoonView.swift */,
-				F16CD647277FF0B6003BE269 /* MarsView.swift */,
 			);
 			path = "Space Travel";
 			sourceTree = "<group>";
@@ -267,8 +261,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1FF6D14277FC80F00A46ECE /* SideMenu.swift in Sources */,
-				F16CD646277FF041003BE269 /* MoonView.swift in Sources */,
-				F16CD648277FF0B6003BE269 /* MarsView.swift in Sources */,
 				F1FF6CEC277F9F6D00A46ECE /* ContentView.swift in Sources */,
 				F1FF6CEA277F9F6D00A46ECE /* Space_TravelApp.swift in Sources */,
 			);

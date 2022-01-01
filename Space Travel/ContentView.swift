@@ -19,7 +19,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().edgesIgnoringSafeArea(.all)
+        ContentView()
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -129,11 +130,16 @@ struct PageView: View {
                     .padding(.horizontal, 24)
                     .padding(.bottom, 150)
                 }
-
-                .clipShape(RoundedRectangle(cornerRadius: 10.0, style: .continuous))
             }
         }
-        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        .frame(
+            width: UIScreen.main.bounds.width,
+            height: UIScreen.main.bounds.height
+        )
         .tabViewStyle(PageTabViewStyle())
+        .background(Color.black)
+        .onAppear(perform: {
+           UIScrollView.appearance().bounces = false
+         })
     }
 }
